@@ -870,7 +870,7 @@ locals from sp
 
 static int VM_CallInterpreted(vm_t* vm, int* args)
 {
-    uint8_t  stack[OPSTACK_SIZE + 15];
+    uint8_t  stack[OPSTACK_SIZE + 15] = {0};
     int*     opStack;
     uint8_t  opStackOfs;
     int      programCounter;
